@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+</head>
+<body>
+{% verbatim %}
+<div class="container" id="orders_app">
+    <div class="btn btn-success btn-lg" v-for="order in orders">
+        Description: {{ order.description }}
+        <br>
+        Amount: {{ order.amount }}
+        <hr>
+        Bubun: {{ order.bubun }}
+    </div>
+</div>
+{% endverbatim %}
+
+<script src="/static/app.js"></script>
+</body>
+</html>
